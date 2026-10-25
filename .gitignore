@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production builds
+dist/
+build/
+*/dist/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+frontend/.env
+
+# Local Database & Uploads
+*.sqlite
+*.sqlite3
+*.db
+backend/database.sqlite
+uploads/
+backend/uploads/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary media
+.tempmediaStorage/
+scratch/
