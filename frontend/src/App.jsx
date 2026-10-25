@@ -68,7 +68,7 @@ const LOCAL_SEEDS = [
   { id: '8', name: 'Curd (Whole Milk)', regionalName: 'Dahi', caloriesPer100g: 60, proteinPer100g: 3.2, carbsPer100g: 4.7, fatPer100g: 3.2, fiberPer100g: 0, servingUnitDefault: 'cup', conversionToGrams: 150 }
 ];
 
-const API_URL = 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000' : '');
 
 const DEFAULT_PROFILE = {
   isCompleted: false,
